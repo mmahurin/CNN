@@ -2,34 +2,34 @@ A full-stack machine learning app that detects and classifies vehicles in images
 
 ## Models
 
-| Model | Type | Classes | Accuracy |
-| Binary CNN | Classifier | airplane vs car | 94.1% |
-| Multi-class CNN | Classifier | airplane / car / boat | 87.6% |
-| Faster R-CNN ResNet50 | Object Detector | car / airplane / boat | Pretrained on COCO |
+| Model | Type | Classes | Accuracy |  
+| Binary CNN | Classifier | airplane vs car | 94.1% |  
+| Multi-class CNN | Classifier | airplane / car / boat | 87.6% |  
+| Faster R-CNN ResNet50 | Object Detector | car / airplane / boat | Pretrained on COCO |  
 
 ## Stack
-- **Frontend:** React + TypeScript (Vite)
-- **Backend:** FastAPI (Python)
-- **ML Framework:** TensorFlow 2.10
-- **Base Model:** Faster R-CNN ResNet50 pretrained on COCO
+- **Frontend:** React + TypeScript (Vite)  
+- **Backend:** FastAPI (Python)  
+- **ML Framework:** TensorFlow 2.10  
+- **Base Model:** Faster R-CNN ResNet50 pretrained on COCO  
 
 ## Project Structure
 
 CNN/
-├── cnn_basics.py        # Binary CNN training script
-├── cnn_multiclass.py    # Multi-class CNN training script
-└── VehicleClassifier.py # Standalone detection script
+├── cnn_basics.py        # Binary CNN training script  
+├── cnn_multiclass.py    # Multi-class CNN training script  
+└── VehicleClassifier.py # Standalone detection script  
 
 ├── backend/
-│   ├── main.py          # FastAPI endpoints
-│   ├── detector.py      # Model inference logic
-│   └── models/          # Saved Keras models (binary + multiclass)
-├── frontend/
-│   └── src/
-│       ├── App.tsx
-│       └── components/
-│           ├── ImageUpload.tsx
-│           └── DetectionResult.tsx
+│   ├── main.py          # FastAPI endpoints  
+│   ├── detector.py      # Model inference logic  
+│   └── models/          # Saved Keras models (binary + multiclass)  
+├── frontend/  
+│   └── src/  
+│       ├── App.tsx  
+│       └── components/  
+│           ├── ImageUpload.tsx  
+│           └── DetectionResult.tsx  
 
 
 
