@@ -20,6 +20,7 @@ function App() {
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: 32, fontFamily: "sans-serif" }}>
       <h1>Vehicle Classifier</h1>
+      <h3>Elgible vehicles include: Car, Plane, Boat</h3>
 
       <div style={{ marginBottom: 24 }}>
         <label style={{ marginRight: 12 }}>Select Model:</label>
