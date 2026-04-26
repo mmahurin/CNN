@@ -52,6 +52,8 @@ history = model.fit(
     batch_size=32, #look at 32 samples at a time before updating the model's weights. This helps with memory efficiency and can lead to faster convergence.
     validation_split=0.2 #set sized reserved for validation.
 )
+model.save(r"C:\Workspace\CNN\backend\models\binary_cnn")
+
 test_loss, test_acc = model.evaluate(x_test, y_test) #evaluate the model on the test set to see how well it generalizes to unseen data
 print(f"Test accuracy: {test_acc:.4f}") #print the test accuracy
 plt.plot(history.history["accuracy"],     label="train accuracy")

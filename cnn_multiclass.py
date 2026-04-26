@@ -44,6 +44,8 @@ history = model.fit(
     batch_size=32,
     validation_split=0.2
 )
+model.save(r"C:\Workspace\CNN\backend\models\multiclass_cnn")
+
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print(f"Test accuracy: {test_acc:.4f}")
 
