@@ -21,15 +21,15 @@ CNN/
 └── VehicleClassifier.py # Standalone detection script  
 
 ├── backend/
-│   ├── main.py          # FastAPI endpoints  
-│   ├── detector.py      # Model inference logic  
-│   └── models/          # Saved Keras models (binary + multiclass)  
+│     main.py          # FastAPI endpoints  
+│     detector.py      # Model inference logic  
+│     models/          # Saved Keras models (binary + multiclass)  
 ├── frontend/  
-│   └── src/  
-│       ├── App.tsx  
-│       └── components/  
-│           ├── ImageUpload.tsx  
-│           └── DetectionResult.tsx  
+│    src/  
+│       App.tsx  
+│       components/  
+│            ImageUpload.tsx  
+│            DetectionResult.tsx  
 
 
 
