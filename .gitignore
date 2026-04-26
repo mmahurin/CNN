@@ -1,0 +1,12 @@
+# Pretrained models - too large for GitHub
+faster_rcnn_resnet50_v1_640x640_coco17_tpu-8/
+*.tar.gz
+
+# Test images
+test.jpg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
