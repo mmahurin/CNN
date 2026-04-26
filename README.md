@@ -42,38 +42,41 @@ CNN/
 
 ### 1. Create Python environment
 
-```bash
+```
 conda create -n jetdetect python=3.10 -y
 conda activate jetdetect
 pip install tensorflow==2.10.0
 pip install "numpy<2"
 pip install fastapi uvicorn python-multipart pillow pyyaml==5.4.1
+
+```
 2. Download the pretrained model
 Download Faster R-CNN ResNet50 pretrained on COCO and extract it to the project root:
-
-
+```
 faster_rcnn_resnet50_v1_640x640_coco17_tpu-8/
-3. Train and save the CNN models
-
+```
+4. Train and save the CNN models
+```
 python cnn_basics.py
 python cnn_multiclass.py
+```
 4. Start the backend
-
+```
 cd backend
 uvicorn main:app --reload
 Backend runs at http://127.0.0.1:8000
-
+```
 5. Start the frontend
-
+```
 cd frontend
 npm install
 npm run dev
 Frontend runs at http://localhost:5173
-
+```
 Usage
 Open http://localhost:5173 in your browser
 Select a model from the top buttons
-Drag and drop or click to upload an image
+Drag and drop or click to upload an image containing boat, plane, and or car
 View the prediction or bounding box results
 Notes
 The pretrained Faster R-CNN model is not included in the repo due to GitHub's 100MB file size limit — download it separately (see Setup step 2)
