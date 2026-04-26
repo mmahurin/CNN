@@ -37,7 +37,7 @@ function App() {
               cursor: "pointer"
             }}
           >
-            {m === "binary" ? "Binary CNN" : m === "multiclass" ? "Multi-class CNN" : "Faster R-CNN"}
+            {m === "binary" ? "Binary CNN" : m === "multiclass" ? "Multi-class CNN" : "Object Detection CNN"}
           </button>
         ))}
       </div>
